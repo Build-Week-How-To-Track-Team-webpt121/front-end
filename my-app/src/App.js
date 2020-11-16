@@ -2,6 +2,7 @@ import './App.css';
 import React, { useState } from "react";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
+import Guides from "./components/Guides";
 import PrivateRoute from "./components/PrivateRoute";
 import { Route, Switch, Link } from "react-router-dom";
 
@@ -45,6 +46,7 @@ function App() {
 
     </div>
     <Switch>
+    <PrivateRoute exact path="/protected" component={Guides} />
         <Route
           path="/login"
           render={(props) => <Login {...props} setId={setId} />}

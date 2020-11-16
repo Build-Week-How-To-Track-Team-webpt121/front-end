@@ -9,7 +9,6 @@ const AddGuide = (props) => {
         guideName:"", 
         category:"",
         description:"", 
-        upVotes: 0
         
     })
 
