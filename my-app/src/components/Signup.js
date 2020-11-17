@@ -11,9 +11,8 @@ const formSchema = yup.object().shape({
 });
 
 const initialCredentials = {
-  credentials: { username: "", password: "" },
-  terms: "",
-  error: "",
+    username: "Test",
+	password: "1234"
 };
 
 
